@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Shop Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img height="90px" src="logo.png"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2 style="font-size:60px">You crave it<br>We <span style="font-size:90px">bake it</span>.</h2>
+            </div>
+            <div class="imgBox">
+                <img src="image1.png" class="cake">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img height="100px" src="thumb1.png" onclick="imgSlider('image1.png')"></li>
+            <li><img height="100px" src="thumb2.png" onclick="imgSlider('image2.png')"></li>
+            <li><img height="100px" src="thumb3.png" onclick="imgSlider('image3.png')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img height="30px" src="facebook.png"></a></li>
+            <li><a href="#"><img height="30px" src="twitter.png"></a></li>
+            <li><a href="#"><img height="30px" src="instagram.png"></a></li>
+        </ul>
+    </section>
+
+<script type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.cake').src = anything;
+    }
+
+</script>
+
+</body>
+</html>
